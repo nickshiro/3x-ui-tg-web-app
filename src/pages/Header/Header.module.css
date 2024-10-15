@@ -1,0 +1,13 @@
+:root {
+  --header-font-family: var(--font-family);
+}
+
+.h1 {
+  color: white;
+  font-family: var(--header-font-family);
+  line-height: 1.5;
+  margin: 0 0 8px;
+  font-size: 28px;
+  text-align: center;
+  font-family: 500;
+}

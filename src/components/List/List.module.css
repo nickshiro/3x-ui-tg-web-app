@@ -1,0 +1,7 @@
+.list {
+  border-radius: 12px;
+  background-color: var(--section-background-color);
+  margin: 0 16px 16px;
+  text-decoration: none;
+  padding: 0;
+}

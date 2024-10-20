@@ -1,16 +1,17 @@
-import "./App.css";
-import { useEffect } from "react";
-import { useTelegram } from "./hooks/useTelegram";
+import React from "react";
 import {
   createBrowserRouter,
-  RouteObject,
   RouterProvider,
+  RouteObject,
 } from "react-router-dom";
-
+import { init } from "@telegram-apps/sdk-react";
 // Pages
-import Home from "./pages/Home/Home";
-import AddDevice from "./pages/AddDevice/AddDevice";
-import NoAuth from "./pages/NoAuth/NoAuth";
+import Home from "./page/Home/Home";
+import Add from "./page/Add/Add";
+import Info from "./page/Info/Info";
+
+// Style
+import "./App/App.css";
 
 const router = createBrowserRouter([
   {
@@ -19,22 +20,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/add",
-    element: <AddDevice />,
+    element: <Add />,
   },
   {
-    path: "*",
-    element: <NoAuth />,
+    path: "/info",
+    element: <Info />,
   },
 ] as RouteObject[]);
 
-function App() {
-  const { tg } = useTelegram();
-
-  useEffect(() => {
-    tg.ready();
-  });
+const App: React.FC = () => {
+  init();
 
   return <RouterProvider router={router} />;
-}
+};
 
 export default App;

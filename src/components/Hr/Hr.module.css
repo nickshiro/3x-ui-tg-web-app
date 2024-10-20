@@ -1,0 +1,8 @@
+.hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  max-width: calc(100% - 32px);
+  background-color: var(--separator-color);
+}

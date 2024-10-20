@@ -1,0 +1,20 @@
+:root {
+  --font-family: "Roboto", -apple-system, BlinkMacSystemFont,
+    "Apple Color Emoji", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+
+  /* Theme */
+  --header-text-color: var(--tg-theme-text-color);
+  --subtitle-text-color: var(--tg-theme-subtitle-text-color);
+  --text-color: var(--tg-theme-text-color);
+  --section-background-color: var(--tg-theme-section-bg-color);
+  --section-header-text-color: var(--tg-theme-section-header-text-color);
+  --background-color: var(--tg-theme-secondary-bg-color);
+  --separator-color: var(--tg-theme-section-separator-color);
+  --accent-text-color: var(--tg-theme-accent-text-color);
+}
+
+.body {
+  margin: 24px 0 0;
+  background-color: var(--background-color);
+}

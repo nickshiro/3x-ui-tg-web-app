@@ -1,0 +1,62 @@
+.cell {
+  padding: 10px 16px;
+  position: relative;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+.cell__section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.cell__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin: 0 16px 0 0;
+  flex: 0 0 48px;
+}
+
+.cell__icon > svg {
+  fill: var(--accent-text-color);
+}
+
+.cell__column {
+  position: relative;
+}
+
+.cell__name {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-size: 17px;
+  font-weight: 510;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.cell__status_true,
+.cell__status_false {
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.23px;
+  text-align: left;
+  margin: 2px 0 0;
+  padding: 0;
+}
+
+.cell__status_true {
+  color: var(--accent-text-color);
+}
+
+.cell__status_false {
+  color: var(--subtitle-text-color);
+}
